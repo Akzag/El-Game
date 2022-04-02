@@ -1,0 +1,113 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.line {
+  display: inline-block;
+  position: relative;
+}
+
+.transicion {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.infoBoxE {
+  background-color: white;
+  width: 250px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border: 4px black solid;
+  padding: 12px;
+  font-size: 10px;
+}
+
+.infoBoxA {
+  background-color: white;
+  width: 250px;
+  position: absolute;
+  top: 330px;
+  right: 50px;
+  border: 4px black solid;
+  padding: 12px;
+  font-size: 10px;
+}
+
+.barraVacia {
+  height: 5px;
+  background-color: #ccc;
+  margin-top: 10px;
+}
+
+.barraVida {
+  height: 5px;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.cajaInferior {
+  background-color: white;
+  height: 140px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 4px black solid;
+  display: flex;
+}
+
+.dialogueBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding: 12px;
+  display: none;
+  cursor: pointer;
+}
+
+.attacksBox {
+  width: 66.66%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cajaLateralInferior{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    border-left: 4px black solid;
+    font-size: 12px
+}

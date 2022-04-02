@@ -1,21 +1,78 @@
-<!DOCTYPE html>
-<head></head>
-<style>
-body {
-    background-color: black;
-}
-canvas{
-    position: absolute;
-    top: 30px;
-    left: 10%;
-}
-</style>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-<body>
-<canvas class=" canva "></canvas>
-<script src="Datos/Colitions.js"></script>
+<div class="line" >
+  <div
+    id="overlappingDiv"
+    class=" transicion"
+  ></div>
+
+  <canvas></canvas>
+
+  <div id="userInterface" style="display: none">
+    <!-- Represents health bar of draggle (enemy) -->
+    <div class="infoBoxE ">
+      <h1 id="nombreEnemigo"> Draggle </h1>
+      <div style="position: relative">
+        <div class="barraVacia"></div>
+        <div
+          id ="enemyHealthBar"
+          class ="barraVida"></div>
+      </div>
+    </div>
+
+    <!-- Represents health bar of emby (us) -->
+    <div
+      class="infoBoxA ">
+      <h1> Emby </h1>
+      <div style="position: relative">
+        <div class="barraVacia"></div>
+        <div
+          id="playerHealthBar"
+          class ="barraVida"></div>
+      </div>
+    </div>
+
+    <div
+      class="cajaInferior" >
+      <div
+        id="dialogueBox"
+        class="dialogueBox">
+      </div>
+      <div
+        id="attacksBox"
+        class="attacksBox">
+      </div>
+      <div
+        class="cajaLateralInferior">
+        <h1 id="attackType" >Attack Type</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+  integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+  integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="data/audio.js"></script>
+<script src="data/battleZones.js"></script>
+<script src="data/collisions.js"></script>
+<script src="data/attacks.js"></script>
+<script src="data/monsters.js"></script>
+<script src="classes.js"></script>
 <script src="index.js"></script>
-<!--<script src="classes.js"></script> -->
-</body>
-
-
+<script src="battleScene.js"></script>
