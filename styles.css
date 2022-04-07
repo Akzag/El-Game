@@ -23,6 +23,8 @@ button:hover {
 .line {
   display: inline-block;
   position: relative;
+  left: 10%;
+  top: 3%;
 }
 
 .transicion {
@@ -103,11 +105,11 @@ button:hover {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.cajaLateralInferior{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 33.33%;
-    border-left: 4px black solid;
-    font-size: 12px
+.cajaLateralInferior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  border-left: 4px black solid;
+  font-size: 12px
 }
